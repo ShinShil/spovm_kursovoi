@@ -1,0 +1,22 @@
+params title;
+
+createFolder css js php img;
+createFile index.html css/index.css js/index.js php/index.php .htaccess;
+copyFile js/jquery.js;
+
+val html {
+<!DOCTYPE html>
+<html>
+	</head>
+		<title>$title$</title>
+		<meta content-type="http-equiv" content="text/html; charset='UTF-8'">
+	</head>
+	<body>
+		<script src="js/jquery.js" type="text/javascript">
+	<body>
+</html>
+
+};
+
+writeToFile index.html html;
+writeToFile .htaccess SetDefaultCharset UTF8;

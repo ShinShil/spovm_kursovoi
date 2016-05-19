@@ -1,0 +1,21 @@
+1)Создайте папку, в которой будут лежать файлы-шаблоны, в данном пример mytasks
+2)Добавьте эту к списку taskDirs
+	spovm_kursovoi set <абсолютный путь к папке>
+2*)таких папок может быть несколько
+	spovm_kursovoi add <абсолютный путь к папке>
+2**)для просмотра всех папок
+	spov_kursovoi taskDirs
+3)создайте в добавленной папке файл и наберите в нём код, для примера, файл mytasks/example.txt
+params folderName;
+createFolder $folderName$;
+createFile someCode.txt;
+val someCode {
+	hey, this code in folder: "$folderName$"
+};
+writeToFile someCode.txt someCode
+
+4)Откройте консоль и пройдите в папку с которой вы будете создавать проект, в данном пример testProject
+4*)Когда Вы запускаете программу из командной строки, то все пути в нашем файле считаются относительно того, где Вы запустили программу.
+5)запустите команду: spovm_kursovoi example
+6)готово
+

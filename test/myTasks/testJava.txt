@@ -1,0 +1,24 @@
+params skillName damageType;
+val skill {
+	class sk$skillName$ extends Skill {
+		public sl$skillName$() {
+			this.damage = DamageType.$damageType$;
+		}
+	}	
+};
+
+val animation {
+	class Animation$skillName$ extends AnimationOneToOneFly {
+		public Animation$skillName$() {
+			
+		}
+	}
+};
+
+insert forConnector {
+	append {public ConnectorSkillAnim()} {anims.add(new Animation$skillName$("$skillName$"));};
+};
+
+writeToFile testJava/animation/Animation$skillName$.java animation;
+writeToFile testJava/skill/Sk$skillName$.java skill;
+insertToFile testJava/animation/ConnectorSkillAnim.java forConnector;

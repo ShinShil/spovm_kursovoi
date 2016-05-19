@@ -1,0 +1,14 @@
+0)Скачать себе spovm_kursovoi.exe 
+1)Добавить к к переменным среды папку с spovm_kursovoi.exe
+2)Выкачать папку test и посмотреть содержимое папок test/htmltest/testJava и файла test/testJava/animation/ConnectorSkillAnim.java (обратить внимание на конструктор класса - в нём 4 строчки)
+
+
+3)Запустить комнадную строку
+В командной строке:
+4)spovm_kursovoi set <абсолютный путь к папке test/myTasks>
+5)cd <перейти в папку test/html>
+6)spovm_kursovoi htmlProject superSite
+7)cd <перейти в папку test/testJava>
+8)spovm_kursovoi testJava Fire Fire 
+-------------------------------------------------------
+9)повторить вторую половину П.2

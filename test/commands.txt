@@ -1,0 +1,13 @@
+createFolder <любок количество папок>
+createFile <любое количество файлов>
+copyFile <любое количество файлов>
+copyFolder <любое количество папок>
+val <name> {}
+insert <name> {append {<object>} {<code>}}
+insertToFile <fileName> <insertVar>
+
+все команды обязаны оканчиваться ;
+
+!для insert Доступно только append
+
+для примера смотреть myTaks/htmlProject, myTasks/testJava
